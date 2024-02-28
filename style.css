@@ -1,0 +1,108 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #C2B194;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+} 
+
+a {
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  color:#C2B194;
+}
+.banner{
+    text-align: center;
+    background-image:url('images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    border:85px;
+    border-color:#C2B194;
+    opacity:100%;
+    padding: 200px 0;
+}
+.banner h1{
+    color:#8C6943;
+    font-size:45px;
+    margin: 0;
+
+}
+.banner p{
+    color:black;
+    opacity:75%;
+    font-size:25px;
+}
+.container{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+.button-blue{
+    background-color:#8C6943 ;
+    padding:12px 30px ;
+    border-radius:6px;
+    display:inline-block;
+}
+
+.container h2{
+    color:#5B3B1A;
+    opacity:90%;
+}
+.allcards{
+    display:inline-grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 14px;
+
+}
+.card{
+    background-color:white;
+    text-align:center;
+    border-radius:4px;
+    width:200px;
+    padding:25px;
+    margin:8px;
+}
+.card img{
+    width:280px;
+    height:280px;
+    border-radius: 5px;
+}
+.card h3{
+    color:#8C6943;
+    opacity:90%;
+}
+@media(max-width:800px){
+    .allcards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        width:auto;
+    }
+}
+@media(max-width:600px){
+    .allcards{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width:auto;
+    }
+}
+.footer p{
+    background-color:#C2B194;
+    opacity:95%;
+    color:white;
+    padding:60px;
+    text-align: center;
+
+}
